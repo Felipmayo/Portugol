@@ -79,3 +79,38 @@ programa {
     }
   }
 }
+
+
+
+
+programa {
+  funcao inicio() {
+    real a, b
+    cadeia operacao
+
+    escreva("Digite o primeiro número: ")
+    leia(a)
+
+    escreva("Digite o segundo número: ")
+    leia(b)  
+
+    escreva("Símbolo da operação desejada: ")
+    leia(operacao)
+
+    se (operacao == "+")
+      escreva(a, " + ", b ," = ", a + b)
+    
+    se (operacao == "-")
+      escreva(a, " - ", b ," = ", a - b)
+    
+    se (operacao == "*")
+      escreva(a, " * ", b ," = ", a * b)
+    
+    se (operacao == "/" e b!=0 )
+      escreva(a, " / ", b ," = ", a / b)
+    
+    senao
+      escreva("Operação inválida")   
+    }
+  }
+
