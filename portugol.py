@@ -80,8 +80,7 @@ programa {
   }
 }
 
-
-
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 programa {
   funcao inicio() {
@@ -114,3 +113,28 @@ programa {
     }
   }
 
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+programa {
+  funcao inicio() {
+    inteiro idade
+    logico autorizacao
+    escreva("Insira a idade: ")
+    leia(idade)
+    escreva("Você possui autorização? ")
+    leia(autorizacao)
+
+    se (autorizacao == "sim"){
+      autorizacao == verdadeiro
+    }
+    senao{
+      autorizacao == falso
+    }
+    se (idade >= 12 e idade <= 18 e autorizacao){
+      escreva("Você pode praticar esporte")
+    }
+    senao{
+      escreva("Você não pode praticar esse esporte")
+    }
+  }
+}
