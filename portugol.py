@@ -157,7 +157,7 @@ programa {
 
 programa {
   funcao inicio() {
-    //FUNÇÃO: BLOCOS DE CÓDIGO = TAREFA ESPECÍFICA ===> RETORNO (RESULTADO)
+    #FUNÇÃO: BLOCOS DE CÓDIGO = TAREFA ESPECÍFICA ===> RETORNO (RESULTADO)
    inteiro compra
    escreva("Insira o valor da compra: ")
    leia(compra)
