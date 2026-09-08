@@ -177,3 +177,52 @@ programa {
 }
 }
 
+
+
+programa
+{
+    funcao cadeia escolher_opcao(inteiro op)
+    {
+        escolha (op)
+        {
+            caso 1:
+                retorne "Dinheiro"
+
+            caso 2:
+                retorne "Crédito"
+
+            caso 3:
+                retorne "Débito"
+
+            caso 4:
+                retorne "Boleto"
+
+            caso 5:
+                retorne "Pix"
+
+            caso contrario:
+                retorne "Opção inválida"
+        }
+    }
+
+    funcao inicio()
+    {
+        inteiro op
+        cadeia forma
+
+        escreva("------ MENU ------\n")
+        escreva("\nOpções de pagamento:")
+        escreva("\n1 - Dinheiro")
+        escreva("\n2 - Crédito")
+        escreva("\n3 - Débito")
+        escreva("\n4 - Boleto")
+        escreva("\n5 - Pix")
+
+        escreva("\n\nEscolha a forma de pagamento: ")
+        leia(op)
+
+        forma = escolher_opcao(op)
+
+        escreva("\nForma escolhida: ", forma)
+    }
+}
