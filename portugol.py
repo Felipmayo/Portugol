@@ -14,7 +14,7 @@ programa {
   }
 }
 
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 programa {
   funcao inicio() {
@@ -31,7 +31,7 @@ programa {
   }
 }
 
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 programa {
   funcao inicio() {
@@ -60,7 +60,7 @@ programa {
   }
 }
 
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 programa {
   funcao inicio() {
@@ -80,7 +80,7 @@ programa {
   }
 }
 
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 programa {
   funcao inicio() {
@@ -113,7 +113,7 @@ programa {
     }
   }
 
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 programa {
   funcao inicio() {
@@ -139,7 +139,7 @@ programa {
   }
 }
 
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 programa {
   funcao inicio() {
@@ -152,3 +152,28 @@ programa {
     escreva ("Pode sair = ", pode_sair)
   }
 }
+
+
+
+programa {
+  funcao inicio() {
+    //FUNÇÃO: BLOCOS DE CÓDIGO = TAREFA ESPECÍFICA ===> RETORNO (RESULTADO)
+   inteiro compra
+   escreva("Insira o valor da compra: ")
+   leia(compra)
+
+   se (compra >= 100 e compra < 300){
+    escreva("O valor ficou: ", compra - (compra*0.10))
+   }
+   senao se (compra >= 300 e compra < 500){
+    escreva("O valor ficou: ", compra - (compra*0.15))
+   }
+   senao se (compra >= 500){
+    escreva("O valor ficou: ", compra - (compra*0.20))
+   }
+   senao{
+    escreva("O valor ficou: ", compra)
+   }
+}
+}
+
