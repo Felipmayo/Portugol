@@ -20,3 +20,25 @@
     }
   }
 }
+//-----------------------------------------------------------------------
+programa {
+  inclua biblioteca Util --> util
+  funcao inicio() {
+    inteiro matriz [3] [3], i, j
+    inteiro soma = 0
+      para(i=0; i<3; i++){
+        para(j=0; j<3; j++){
+        matriz [i] [j] = util.sorteia (1,9)
+        soma = soma + matriz [i] [j]
+      }
+    }
+    escreva("A soma dos números da matriz é: ", soma)
+    escreva("\n\n<<<TABELA MATRIZ>>>\n")
+    para(i=0; i<3; i++){
+      para(j=0; j<3; j++){
+        escreva("\t", matriz[i] [j], "\t")
+      }
+      escreva("\n")
+    }
+  }
+}
