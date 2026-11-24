@@ -42,3 +42,27 @@ programa {
     }
   }
 }
+//-----------------------------------------------------------------------
+programa {
+  funcao inicio() {
+    inteiro identidade[3][3]
+    inteiro i, j
+    para(i=0; i<3; i++){
+      para(j=0; j<3; j++){
+        se(i == j){
+          identidade[i][j] = 1
+        }
+        senao{
+          identidade[i][j] = 0
+        }
+      }
+    }
+    escreva("\t<<<MATRIZ IDENTIDADE>>>\n")
+    para(i=0; i<3; i++){
+      para(j=0; j<3; j++){
+        escreva("\t",identidade[i][j])
+      }
+      escreva("\n")
+    }
+  }
+}
