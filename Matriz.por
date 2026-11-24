@@ -66,3 +66,40 @@ programa {
     }
   }
 }
+//-----------------------------------------------------------------------
+programa {
+  funcao inicio() {
+    inteiro matriz[4][4]
+    inteiro i, j
+    inteiro soma, produto, maior
+    soma = 0
+    produto = 1
+    para(i=0; i<4; i++){
+      para(j=0; j<4; j++){
+        escreva("Insira os valores das posições [", i,"][", j,"]: ")
+        leia(matriz[i][j])
+        se(i == j){
+          soma += matriz[i][j]
+        }
+        se(i == 1){
+          produto *= matriz[i][j]
+        }
+      }
+    }
+    maior = matriz[0][2]
+    para(i=0; i<4; i++){
+      se(matriz[i][2] > maior){
+        maior = matriz[i][2]
+      }
+    }
+    para(i=0; i<4; i++){
+      para(j=0; j<4; j++){
+        escreva("\t", matriz[i][j], " ")
+      }
+      escreva("\n")
+    }
+    escreva("A soma de todos os elementos da diagonal principal equivale a: ", soma)
+    escreva("\nO produto dos elementos da segunda linha [1][x] é: ", produto)
+    escreva("\nO maior número da terceira coluna [x][2] é: ", maior)
+  }
+}
